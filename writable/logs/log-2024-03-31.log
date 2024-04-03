@@ -1,0 +1,212 @@
+CRITICAL - 2024-03-31 00:21:35 --> ErrorException: Undefined variable $validation
+in APPPATH\Views\pages\categories\add.php on line 44.
+ 1 APPPATH\Views\pages\categories\add.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\categories\\add.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\categories\\add.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/categories/add', [], true)
+ 5 APPPATH\Controllers\CategoryController.php(22): view('pages/categories/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_add_page()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 00:21:36 --> ErrorException: Undefined variable $validation
+in APPPATH\Views\pages\categories\add.php on line 44.
+ 1 APPPATH\Views\pages\categories\add.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\categories\\add.php', 44)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\categories\\add.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/categories/add', [], true)
+ 5 APPPATH\Controllers\CategoryController.php(22): view('pages/categories/add', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_add_page()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:00:45 --> TypeError: ucwords(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\sections\header.php on line 36.
+ 1 APPPATH\Views\sections\header.php(36): ucwords([...])
+ 2 APPPATH\Views\layouts\layout.php(17): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\sections\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\layouts\\layout.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/layout', [], true)
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/users/index', [], true)
+ 7 APPPATH\Controllers\UserController.php(15): view('pages/users/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-31 02:13:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = 1' at line 1 in C:\xampp\htdocs\caseProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\caseProject\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE brands W...', 0)
+#1 C:\xampp\htdocs\caseProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands W...')
+#2 C:\xampp\htdocs\caseProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands W...')
+#3 C:\xampp\htdocs\caseProject\app\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands W...')
+#4 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+#5 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#6 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caseProject\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-31 02:13:47 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = 1' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = 1')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:13:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = 1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands WHERE category_id = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands WHERE category_id = 1')
+ 3 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = 1')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:13:47 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = 1' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE brands WHERE category_id = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands WHERE category_id = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands WHERE category_id = 1')
+ 4 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = 1')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-31 02:14:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = '1'' at line 1 in C:\xampp\htdocs\caseProject\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\caseProject\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE brands W...', 0)
+#1 C:\xampp\htdocs\caseProject\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands W...')
+#2 C:\xampp\htdocs\caseProject\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands W...')
+#3 C:\xampp\htdocs\caseProject\app\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands W...')
+#4 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+#5 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+#6 C:\xampp\htdocs\caseProject\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caseProject\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-31 02:14:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = '1'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = \'1\'')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:14:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = '1'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands WHERE category_id = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands WHERE category_id = \'1\'')
+ 3 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = \'1\'')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:14:35 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE category_id = '1'' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE brands WHERE category_id = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE brands WHERE category_id = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE brands WHERE category_id = \'1\'')
+ 4 APPPATH\Controllers\CategoryController.php(129): CodeIgniter\Database\BaseConnection->query('DELETE brands WHERE category_id = \'1\'')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 02:16:09 --> ErrorException: unlink(C:\xampp\htdocs\caseProject\public/images/category/): Is a directory
+in APPPATH\Helpers\custom_helper.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\caseProject\\public/images/category/): Is a directory', 'C:\\xampp\\htdocs\\caseProject\\app\\Helpers\\custom_helper.php', 45)
+ 2 APPPATH\Helpers\custom_helper.php(45): unlink('C:\\xampp\\htdocs\\caseProject\\public/images/category/')
+ 3 APPPATH\Controllers\CategoryController.php(128): deleteMedia('C:\\xampp\\htdocs\\caseProject\\public/images/category/', '')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 03:36:38 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Views\pages\users\edit.php on line 86.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/users/edit', [], true)
+ 4 APPPATH\Controllers\UserController.php(28): view('pages/users/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->user_edit_page('2')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 03:39:13 --> ErrorException: Attempt to read property "category_add" on int
+in APPPATH\Views\pages\users\edit.php on line 86.
+ 1 APPPATH\Views\pages\users\edit.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category_add" on int', 'C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\users\\edit.php', 86)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\users\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/users/edit', [], true)
+ 5 APPPATH\Controllers\UserController.php(28): view('pages/users/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->user_edit_page('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 03:41:20 --> ErrorException: Undefined array key "type"
+in APPPATH\Views\pages\users\index.php on line 67.
+ 1 APPPATH\Views\pages\users\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type"', 'C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\users\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\pages\\users\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/users/index', [], true)
+ 5 APPPATH\Controllers\UserController.php(15): view('pages/users/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 03:58:22 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\sections\header.php on line 5.
+ 1 APPPATH\Views\sections\header.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\caseProject\\app\\Views\\sections\\header.php', 5)
+ 2 APPPATH\Views\layouts\layout.php(17): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\sections\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\caseProject\\app\\Views\\layouts\\layout.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/layout', [], true)
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/auth/error_page', [], true)
+ 7 APPPATH\Controllers\AuthController.php(64): view('pages/auth/error_page')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->error_page()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:40:35 --> ErrorException: Undefined array key "brand_edit_page"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand_edit_page"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brand_edit/6', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:43:48 --> ErrorException: Undefined array key "brand_edit_page"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand_edit_page"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brand_edit/6', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:43:49 --> ErrorException: Undefined array key "brand_edit_page"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand_edit_page"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brand_edit/6', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:43:52 --> ErrorException: Undefined array key "index"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "index"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brands', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:43:53 --> ErrorException: Undefined array key "index"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "index"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('categories', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 10:43:54 --> ErrorException: Undefined array key "index"
+in APPPATH\Filters\AuthFilter.php on line 30.
+ 1 APPPATH\Filters\AuthFilter.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "index"', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 30)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brands', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-31 11:09:15 --> ErrorException: Array to string conversion
+in APPPATH\Filters\AuthFilter.php on line 35.
+ 1 APPPATH\Filters\AuthFilter.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\caseProject\\app\\Filters\\AuthFilter.php', 35)
+ 2 SYSTEMPATH\Filters\Filters.php(182): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('brand_add', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

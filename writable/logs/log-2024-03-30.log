@@ -1,0 +1,93 @@
+CRITICAL - 2024-03-30 00:36:18 --> ErrorException: Access level to CodeIgniter\HTTP\SiteURI::$segments must be public (as in class CodeIgniter\HTTP\URI)
+in SYSTEMPATH\HTTP\SiteURI.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-30 00:36:18 --> ErrorException: Access level to CodeIgniter\HTTP\SiteURI::$segments must be public (as in class CodeIgniter\HTTP\URI)
+in SYSTEMPATH\HTTP\SiteURI.php on line 24.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-30 11:22:58 --> ErrorException: Undefined variable $email
+in APPPATH\Controllers\HomeController.php on line 9.
+ 1 APPPATH\Controllers\HomeController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\caseProject\\app\\Controllers\\HomeController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\HomeController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:46:00 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\CategoryController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('3')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:49:04 --> Error: Call to a member function where() on null
+in APPPATH\Controllers\CategoryController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:49:23 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\CategoryController.php on line 67.
+ 1 APPPATH\Controllers\CategoryController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\caseProject\\app\\Controllers\\CategoryController.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:56:54 --> Error: Call to a member function getName() on null
+in APPPATH\Helpers\custom_helper.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(64): uploadMedia(null, 'C:\\xampp\\htdocs\\caseProject\\public/images/category/', '')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:57:41 --> Error: Call to a member function getName() on null
+in APPPATH\Helpers\custom_helper.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(64): uploadMedia(null, 'C:\\xampp\\htdocs\\caseProject\\public/images/category/', '')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 22:58:14 --> Error: Call to a member function getName() on null
+in APPPATH\Helpers\custom_helper.php on line 19.
+ 1 APPPATH\Controllers\CategoryController.php(64): uploadMedia(null, 'C:\\xampp\\htdocs\\caseProject\\public/images/category/', '')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CategoryController->category_update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoryController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 23:35:41 --> ParseError: syntax error, unexpected variable "$file"
+in APPPATH\Helpers\custom_helper.php on line 24.
+ 1 SYSTEMPATH\Controller.php(90): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(56): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 23:35:42 --> ParseError: syntax error, unexpected variable "$file"
+in APPPATH\Helpers\custom_helper.php on line 24.
+ 1 SYSTEMPATH\Controller.php(90): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(56): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 23:35:43 --> ParseError: syntax error, unexpected variable "$file"
+in APPPATH\Helpers\custom_helper.php on line 24.
+ 1 SYSTEMPATH\Controller.php(90): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(56): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 23:35:43 --> ParseError: syntax error, unexpected variable "$file"
+in APPPATH\Helpers\custom_helper.php on line 24.
+ 1 SYSTEMPATH\Controller.php(90): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(56): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 23:35:43 --> ParseError: syntax error, unexpected variable "$file"
+in APPPATH\Helpers\custom_helper.php on line 24.
+ 1 SYSTEMPATH\Controller.php(90): helper([...])
+ 2 APPPATH\Controllers\BaseController.php(56): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
